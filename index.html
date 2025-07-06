@@ -8,7 +8,7 @@
 <body>
     <header>
         <img src="./Imgs/Perfil_porfólio.png" alt="" class="perfil">
-        <h1>IVAN GESSINGER <br> DEVESENVOLEDOR BACK-END JUNIOR</h1>
+        <h1>IVAN GESSINGER <br> DESENVOLVEDOR BACK-END JUNIOR</h1>
         <div class="logo">
             
             <a href="https://www.linkedin.com/in/ivan-gessinger-9878a71a8/" target="about:blank">
@@ -30,7 +30,7 @@
     </header>
     <hr>
     <main>
-        <div class="section">
+        <section>
             <h2 class="title-section">Quem sou?</h2>
             <p>
                 &nbsp &nbsp &nbsp Saudações! Me chamo Ivan, sou um jovem rapaz de 21 anos buscando inserção na área de programação. Estou cursando o 3° semestre da faculdade de Sistemas para Internet no IFSP, e sou formado em Técnico em Desenvolvimento de sistemas pela ETEC.
@@ -39,15 +39,20 @@
                 <br><br>
                  Me interesso desde sempre por quebra-cabeças, problemas ou enigmas a serem solucionados, desde problemas técninos ou lógicos a questões filosóficas. Meus hobbys são jogar xadrez e escrever poesias. 
             </p>
-        </div>
+        </section>
         <h1>...</h1>
-        <div class="section">
+        <section>
             <h2 class="title-section">Repertório</h2>
             <ul>
                 <li>Linguagens:
                     <ul>
                         <li>PHP</li>
                         <li>Node.JS </li>
+                    </ul>
+                </li>
+                <li>Frameworks
+                    <ul>
+                        <li>Express.js</li>
                     </ul>
                 </li>
                 <li> Banco de dados:
@@ -68,45 +73,88 @@
                 <li>Front-end: HTML, CSS e JS</li>
             </ul>
         
-        </div>
+        </section>
         <h1>...</h1>
-        <div class="section">
+        <section id="projects">
             <h2 class="title-section">Projetos</h2>
             <hr class="line_projects">
-            <div class="projects">
-                <article class="Project">
+            <div class="projects-content">
+                <article class="Project Palhacult">
                     <img src="./Imgs/Palhacult.png" alt="">
                     <legend class="title">PALHACULT</legend>
-                    <legend class="description">Breve Descrição</legend>
-                    <button>Detalhes</button>
+                    <legend class="description">Agenda cultural</legend>
+                    <button data-modal="Palhacult">DETALHES</button>
                 </article>
                 <article class="Project">
-                    <img src="./Imgs/Palhacult.png" alt="">
-                    <legend class="title">Título</legend>
-                    <legend class="description">Breve Descrição</legend>
-                    <button>Detalhes</button>
-                </article>
-                <article class="Project">
-                    <img src="./Imgs/Palhacult.png" alt="">
-                    <legend class="title">Título</legend>
-                    <legend class="description">Breve Descrição</legend>
-                    <button id="openModalBtn">Detalhes</button>
-                </article>
-            </div>
+                    <img src="./Imgs/placar_jogos.jfif" alt="">
+                    <legend class="title">PLACAR DE JOGOS</legend>
+                    <legend class="description">Placar para evento de jogos eletrônicos</legend>
+                    <button data-modal="Placar-de-jogos">DETALHES</button>
+                </article>       
             
-            
-        </div>
+        </sections>
 
         
     </main>
-    <div class="modal">
+    <div id="Palhacult" class="modal" >
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Título do projeto</h2>
-            <p>Detalhes técnicos Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aperiam expedita placeat ab illo amet sint deleniti reiciendis delectus, fugiat repellat adipisci quos numquam laborum voluptates ducimus aliquam est necessitatibus?</p>
+            <h2>Palhacult | Agenda Cultural</h2>
+            <h3>Descrição</h3>
+            <p>Uma agenda cultural para divulgação dos eventos que acontecem na região de Birigui/Araçatuba, também com propósito informativo, fornecendo um espaço unificado a fim de promover um engajamento cultural por meio da descoberta de novos eventos e atividades culturais.</p>
+
+            <h3>Tecnologias:</h3>
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>HTML, CSS e JS</li>
+            </ul>
+            <h3>Arquitetura: <span>Monolítica</span></h3>
+
+            <h3>Principais funcionalidades:</h3>
+             <ul>
+                <li>Cadastro de novos eventos culturais</li>
+                <li>Consultar os eventos culturais</li>
+                <li>Publicação de artigos informativos</li>
+            </ul>
+            <div id="links-inline">
+                <h4>Status: Em andamento <img src="./Imgs/clock.png" alt="clock"></h4>
+                <h4 >Repositório: <a href="https://github.com/IVan-Gfs/Palhacult.git" target="_blank"><img src="./Imgs/github.png" alt=""></a></h4>
+            </div>
+           
         </div>
     </div>
 
+    <div id="Placar-de-jogos" class="modal" >
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Placar de jogos para competições</h2>
+            <h3>Descrição</h3>
+            <p>Projeto realizado para a feira de ciências da ETEC. <br>Consiste em  um placar de jogos voltado para campeonato de vídeogames, em que os visitantes são cadastrados e depois podem registrar sua pontuação, caso ela ultrapasse o record de algum outro jogador.</p>
 
+            <h3>Tecnologias:</h3>
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>HTML, CSS e JS</li>
+            </ul>
+            <h3>Arquitetura: <span>Monolítica</span></h3>
+
+            <h3>Principais funcionalidades:</h3>
+             <ul>
+                <li>Cadastro de novos visitantes</li>
+                <li>Cadastro dos jogos e das pontuações</li>
+                <li>Consulta e exibição do placar com pontuações</li>
+            </ul>
+            <div id="links-inline">
+                <h4>Status: Concluído</h4>
+                <h4>Repositório: <a href="https://github.com/IVan-Gfs/Placar-de-jogos.git" target="_blank"><img src="./Imgs/github.png" alt=""></a></h4>
+            </div>
+           
+        </div>
+
+        
+    </div>
+    <script src="modal.js"></script>
 </body>
 </html>
