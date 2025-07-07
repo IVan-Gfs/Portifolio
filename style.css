@@ -66,6 +66,10 @@ main section{
     width: 500px;
     
 }
+
+#sobre-min p{
+    text-align: justify;
+}
 main section li{
     margin-left: 20px;
 }
