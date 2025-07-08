@@ -68,7 +68,7 @@ main section{
 }
 
 #sobre-min p{
-    text-align: justify;
+    text-align:justify;
 }
 main section li{
     margin-left: 20px;
@@ -183,12 +183,22 @@ button:hover{
 }
 .modal h4{
     margin-top: 10px;
+    
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 5px;
 }
 .modal img{
-    width: 25px;
+    width: 20px;
     position: relative;
+    margin-bottom: 11px;
     top: 6px;
     
+}
+
+.modal .git-rep img{
+    width: 40px;
 }
 #links-inline{
     display: flex;
