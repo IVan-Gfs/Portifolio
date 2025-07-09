@@ -76,7 +76,6 @@ main section{
     text-align:justify;
 }
 main section li{
-    
     margin: 5px 0px 5px 20px;
 }
 
@@ -253,20 +252,32 @@ button:hover{
     }
     .logo{
         margin: auto;
+       
     }
 }
 
 @media (max-width: 600px) {
     
+    main{
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        gap: 20px;
+        }
     body{
-        width: 550px;
+        width: 80vw;
     }
     main .project {
         width: 100%;
     }
     header {
         width: 100%;
-        margin-top: 50px ;
+        margin-top: 50px;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -274,24 +285,44 @@ button:hover{
         gap: 5px;
         
     }
-     h1{ 
+     #title{ 
         text-align: center;
-        width: 60%;
+        width: 50%;
+        font-size: 1.1em;
         margin: auto;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+    }
+    h2{
+        font-size: 1em;
     }
     hr {
-        width: 90%;
+        width: 70%;
+        margin-bottom: 40px;
     }
-    p{
-        width: 90%;
+ 
+    #sobre-min p{
+        width: 60%;
         margin: auto;
+        font-size: 0.8em;
+        
     }
     main section ul{
-        width: 90%;
+        
+        
+        width: 50%;
         margin: auto;
+        font-size: 0.8em;
+        
+    }
+    main section li{
+        
+        margin: 5px 0px 5px -10px;
     }
     #projects{
-        width: 70%;
+        width: 85%;
     }
     #projects hr{
         width: 100%;
@@ -304,5 +335,13 @@ button:hover{
     .status-img img {
         margin-bottom: 20px;
         
+    }
+    .logo a img{
+        width: 20px;
+        margin: 0;
+        margin: 5px;
+    }
+    h1{
+        text-align: center;
     }
 }
