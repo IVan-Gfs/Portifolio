@@ -14,12 +14,15 @@ body{
 }
 header{
     position: relative;
-    left: -10%;
-    margin: 100px 0px 50px 100px;
+    left: 0%;
+    margin: auto;
+    
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 825px;
+    width: 770px;
+    margin: 100px 0px 50px 0px;
 }
 header .perfil{
     width: 150px;
@@ -41,6 +44,8 @@ header a{
 }
 hr{
     margin-bottom: 100px;
+    width: 770px;
+    
 }
 
 
@@ -71,11 +76,8 @@ main section{
     text-align:justify;
 }
 main section li{
-    margin-left: 20px;
-}
-
-hr{
-    width: 900px;
+    
+    margin: 5px 0px 5px 20px;
 }
 
 #projects{
@@ -228,23 +230,79 @@ button:hover{
 /* RESPONSIVIDADE */
 
 @media (max-width: 992px) {
+    body{
+        width: 770px;
+    }
     main .project {
         width: calc(50% - 20px);
     }
-}
-
-@media (max-width: 600px) {
-    main .project {
-        width: 100%;
+    h1{ 
+        text-align: left;
+        margin: 0 auto;
+        width: 70%;
     }
-
     header {
         width: 100%;
         margin: 20px auto;
         left: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
+    img{
+        margin: auto;
+    }
+    .logo{
+        margin: auto;
+    }
+}
 
+@media (max-width: 600px) {
+    
+    body{
+        width: 550px;
+    }
+    main .project {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        margin-top: 50px ;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        
+    }
+     h1{ 
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
     hr {
         width: 90%;
+    }
+    p{
+        width: 90%;
+        margin: auto;
+    }
+    main section ul{
+        width: 90%;
+        margin: auto;
+    }
+    #projects{
+        width: 70%;
+    }
+    #projects hr{
+        width: 100%;
+    }
+    .Project button{
+        width: 100%;
+        height: 35px;
+        font-size: 0.9em;
+    }
+    .status-img img {
+        margin-bottom: 20px;
+        
     }
 }
