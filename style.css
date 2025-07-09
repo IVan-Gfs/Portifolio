@@ -67,9 +67,7 @@ main .title-section{
 }
     
 main section{
-    
     width: 500px;
-    
 }
 
 #sobre-min p{
@@ -283,8 +281,8 @@ button:hover{
         width: 50%;
         font-size: 1.1em;
         margin: auto;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
         padding: 5px;
         margin: 10px;
     }
@@ -302,6 +300,9 @@ button:hover{
         font-size: 0.8em;
         
     }
+    main section{
+        width: 400px;
+    }   
     main section ul{
         
         
