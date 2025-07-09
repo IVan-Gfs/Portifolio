@@ -259,18 +259,11 @@ button:hover{
 @media (max-width: 600px) {
     
     main{
-        width: 90%;
-        max-width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
+        width: 100%;
         gap: 20px;
         }
     body{
-        width: 80vw;
+        width: 100%;
     }
     main .project {
         width: 100%;
@@ -322,7 +315,7 @@ button:hover{
         margin: 5px 0px 5px -10px;
     }
     #projects{
-        width: 85%;
+        width: 80%;
     }
     #projects hr{
         width: 100%;
