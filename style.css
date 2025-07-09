@@ -227,8 +227,10 @@ button:hover{
 /* RESPONSIVIDADE */
 
 @media (max-width: 992px) {
-    body{
-        width: 770px;
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     main .project {
         width: calc(50% - 20px);
@@ -301,7 +303,7 @@ button:hover{
         
     }
     main section{
-        width: 400px;
+        width: 350px;
     }   
     main section ul{
         
