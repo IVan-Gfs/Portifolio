@@ -35,12 +35,12 @@ header h1{
     margin: 20px;
    
 }
-header .logo img{
+ .logo img{
     width: 30px;
     margin-top: 50px;
     margin-right: 10px;
 }
-header a{
+a{
     text-decoration: none;
 }
 hr{
@@ -58,7 +58,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
     gap: 80px;
 }
 
@@ -219,6 +218,19 @@ button:hover{
     color: red;
 }
 
+#contact h2{
+    margin-bottom: 20px;
+}
+#contact .logo img{
+    margin-top: 10px;
+}
+footer hr{
+    width: 100vw;
+}
+footer #thanks{
+    margin: 40px;
+    text-align: center;
+}
 @keyframes fadeIn{
     from {opacity: 0;}
     to {opacity: 1;}
