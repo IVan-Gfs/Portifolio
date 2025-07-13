@@ -344,4 +344,7 @@ button:hover{
     .modal h4{
         font-size: 0.8em;
     }
+    .modal .close{
+        width: 30px;
+    }
 }
