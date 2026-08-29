@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     display: flex;
@@ -60,6 +63,9 @@ main{
     align-items: center;
     gap: 80px;
 }
+main section {
+    scroll-margin-top: 80px;
+}
 
 main .title-section{
     margin: 20px 0px 30px 0px;
@@ -76,6 +82,104 @@ main section{
 main section li{
     margin: 5px 0px 5px 20px;
 }
+.experience {
+    width: 100%;
+}
+
+.experience-card {
+    background-color: #161616;
+    border-left: 4px solid #E37749;
+
+    padding: 25px;
+    margin-top: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.experience-header h3 {
+    color: #E37749;
+    margin-bottom: 5px;
+}
+
+.experience-header h4 {
+    color: #D9D9D9;
+    font-weight: normal;
+}
+
+.experience-header span {
+    background-color: #233d2c;
+    color: #6ee79a;
+
+    padding: 5px 12px;
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+}
+
+.experience-card p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.experience-card li {
+    margin: 8px 0;
+}
+
+#tecnologias {
+    width: 700px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tech-card {
+    background-color: #161616;
+    border: 1px solid #292929;
+    border-radius: 6px;
+
+    padding: 20px;
+
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.tech-card:hover {
+    transform: translateY(-4px);
+    border-color: #E37749;
+}
+
+.tech-card h3 {
+    color: #E37749;
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-list span {
+    background-color: #252525;
+    border: 1px solid #353535;
+
+    padding: 6px 10px;
+    border-radius: 4px;
+
+    font-size: 0.8rem;
+}
+
 
 #projects{
     width: 900px;
@@ -102,8 +206,14 @@ main .project {
     width: 250px;
     background-color: #1B1A1A;
     text-align: center;
-    /* border: 1px solid black; */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+main .project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
 main .project img{
     width: 100%;
     height: 140px;
@@ -202,6 +312,35 @@ button:hover{
     justify-content: space-between;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    background-color: rgba(16, 16, 17, 0.92);
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid #292929;
+}
+
+.navbar a {
+    color: #D9D9D9;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #E37749;
+}
 
 
 .close{
@@ -339,6 +478,13 @@ footer #thanks{
     main section li{
         
         margin: 5px 0px 5px -10px;
+    }
+    #tecnologias {
+        width: 80%;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
     }
     #projects{
         width: 80%;
