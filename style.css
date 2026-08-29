@@ -179,7 +179,12 @@ main section li{
 
     font-size: 0.8rem;
 }
-
+ main section ul{
+        width: 90%;
+        margin: 10px;
+        padding: 5px;
+        font-size: 0.9em; 
+    }
 
 #projects{
     width: 900px;
@@ -550,10 +555,10 @@ footer #thanks{
         width: 350px;
     }   
     main section ul{
-        width: 50%;
-        margin: 30px;
-        font-size: 0.9em;
-        
+        width: 90%;
+        margin: 10px;
+        padding: 5px;
+        font-size: 0.9em; 
     }
     main section li{
         
