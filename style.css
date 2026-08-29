@@ -414,6 +414,23 @@ footer #thanks{
     }
 }
 
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        width: 160px;
+        padding: 20px 10px;
+        box-sizing: border-box;  
+    }
+      nav a {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 600px) {
     
     main{
