@@ -220,6 +220,8 @@ main .project img{
     height: 140px;
     object-fit: cover;
     cursor: pointer;
+    object-fit: cover;
+    object-position: left top;
 }
 
 main  .project .title{
@@ -460,8 +462,19 @@ footer #thanks{
         font-size: 0.8rem;
     }
     .navbar::-webkit-scrollbar {
-    display: none;
-}
+        display: none;
+    }
+    main .project {
+        width: 100%;
+    }
+    main .project img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: left top;
+        display: block;
+    }
+   
 }
 
 
@@ -469,15 +482,30 @@ footer #thanks{
 @media (max-width: 600px) {
     
     main{
-        width: 90%;
-        max-width: 350px;
+        width: 94%;
+        max-width: 500px;
         gap: 20px;
         }
     body{
         width: 100%;
     }
+    #projects {
+        width:
+         100%;
+    }
+    main .projects-content {
+        padding: 10px 0;
+        width: 100%;
+    }
     main .project {
         width: 100%;
+    }
+    main .project img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: left top;
+        display: block;
     }
     header {
          width: 100%;
@@ -521,10 +549,8 @@ footer #thanks{
         width: 350px;
     }   
     main section ul{
-        
-        
         width: 50%;
-        margin: auto;
+        margin: 30px;
         font-size: 0.9em;
         
     }
@@ -539,8 +565,9 @@ footer #thanks{
     .tech-grid {
         grid-template-columns: 1fr;
     }
+    
     #projects{
-        width: 80%;
+        width: 90%;
     }
     #projects hr{
         width: 100%;
